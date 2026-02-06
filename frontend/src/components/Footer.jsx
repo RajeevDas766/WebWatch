@@ -100,7 +100,7 @@ const Footer = () => {
                 <div className={footerStyles.brandIconPing}></div>
                 <Clock className={footerStyles.brandIcon} />
               </div>
-              <span className={footerStyles.brandName}>ChronoElite</span>
+              <span className={footerStyles.brandName}>WebWatch</span>
             </div>
             <p className={footerStyles.brandDescription}>
               Crafting timeless pieces for the discerning individual. Where

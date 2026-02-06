@@ -16,7 +16,7 @@ const CategoriesHome = () => {
             className={categoriesHomeStyles.h1}
             style={categoriesHomeStyles.h1FontSize}
           >
-            <span className={`${categoriesHomeStyles.h1SpanRegular} font-family-['Inter Tight']`}>
+            <span className={categoriesHomeStyles.h1SpanRegular}>
               Premium Watch
             </span>
             <span className={categoriesHomeStyles.h1SpanAccent}>Brands</span>

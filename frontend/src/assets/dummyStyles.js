@@ -1,51 +1,42 @@
-// assets/dummyStyles.js
 
 export const bannerHomeStyles = {
   // Layout styles
-  container: "relative overflow-hidden h-screen flex flex-col",
+  container: "relative overflow-x-hidden min-h-[90vh] flex flex-col",
   navbarWrapper: "absolute top-0 pt-10 left-0 w-full z-20",
-  videoContainer: "absolute inset-0 z-0 h-full",
-  contentContainer:
-    "container mx-auto px-4 z-10 pt-32 relative flex flex-col items-center justify-center h-full py-4",
-
+  videoContainer: "absolute inset-0 z-0",
+  contentContainer: "container mx-auto px-4 py-24 z-10 pt-40 relative flex flex-col items-center text-center",
+  
   // Typography
   h1Container: "mb-12 md:mb-16",
-  h1Text:
-    "text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-light mb-4 md:mb-6 leading-tight",
+  h1Text: "text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-light mb-4 md:mb-6 leading-tight",
   h1SpanGray: "inline text-gray-100",
   h1SpanYellow: "text-yellow-500 font-[pacifico] inline-block ml-2 sm:ml-4",
-  subtext:
-    "text-white font-[pacifico]  max-w-2xl mx-auto text-sm sm:text-base md:text-lg font-light",
-
+  subtext: "text-white font-[pacifico] max-w-2xl mx-auto text-sm sm:text-base md:text-lg font-light",
+  
   // Cards section
-  cardsContainer: "relative w-full max-w-5xl mx-auto mt-2 sm:mt-4",
-  grid: "grid grid-cols-3 gap-2 sm:gap-3 items-end",
-
+  cardsContainer: "relative w-full max-w-6xl mx-auto",
+  grid: "grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-6 md:gap-8 items-end",
+  
   // Individual cards
   cardWrapper: "flex flex-col items-center",
-  cardBase:
-    "bg-gradient-to-br from-gray-800 to-black rounded-lg shadow-lg border border-gray-800 w-full",
-  cardMiddle:
-    "bg-gradient-to-br from-gray-800 to-black rounded-lg shadow-lg border border-yellow-600/30 w-full",
-
+  cardBase: "bg-gradient-to-br from-gray-800 to-black rounded-xl shadow-2xl border border-gray-800 w-full",
+  cardMiddle: "bg-gradient-to-br from-gray-800 to-black rounded-xl shadow-2xl border border-yellow-600/30 w-full",
+  
   // Card images
   cardImage: "w-full object-cover rounded-lg",
-  leftCardImage: "h-40 sm:h-48 md:h-56",
-  middleCardImage: "h-44 sm:h-56 md:h-64",
-  rightCardImage: "h-40 sm:h-48 md:h-56",
-
+  leftCardImage: "h-44 sm:h-56 md:h-64 lg:h-55",
+  middleCardImage: "h-52 sm:h-64 md:h-72 lg:h-60",
+  rightCardImage: "h-44 sm:h-56 md:h-64 lg:h-64",
+  
   // Card labels
-  cardLabel: "mt-2 text-xs font-light",
+  cardLabel: "mt-3 font-light text-sm sm:text-base",
   cardLabelGray: "text-gray-300",
   cardLabelYellow: "text-yellow-500",
-
+  
   // Transforms
-  leftCardTransform:
-    "transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300",
-  middleCardTransform:
-    "transform translate-y-0 hover:scale-105 transition-all duration-300",
-  rightCardTransform:
-    "transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300",
+  leftCardTransform: "transform rotate-0 sm:-rotate-12 md:-rotate-2 lg:-rotate-2 xl:-rotate-6 transition-all duration-500 xl:hover:rotate-0 xl:hover:scale-110",
+  middleCardTransform: "transform translate-y-0 sm:-translate-y-8 md:-translate-y-16 transition-all duration-500 pt-3 hover:translate-y-0 hover:scale-110",
+  rightCardTransform: "transform rotate-0 sm:rotate-12 md:rotate-1 xl:rotate-6 transition-all duration-500 xl:hover:rotate-0 xl:hover:scale-110 lg:rotate-2",
 
   // Padding variations
   cardPadding: "p-2 sm:p-3",
@@ -712,7 +703,7 @@ export { loginPageStyles };
 export const navbarStyles = {
   // Layout
   header: "sticky top-4 z-50 pb-5 flex justify-center overflow-x-hidden",
-  nav: "bg-white shadow-lg rounded-lg xl:rounded-full sm:rounded-xl lg:rounded-full md:rounded-full px-4 sm:px-3 md:px-5 py-2 w-[95%] md:w-[90%] max-w-5xl overflow-visible transition-all duration-500 ease-in-out hover:bg-red-600 hover:shadow-sm",
+  nav: "bg-white shadow-lg rounded-lg xl:rounded-full sm:rounded-xl lg:rounded-full md:rounded-full px-4 sm:px-3 md:px-5 py-2 w-[95%] md:w-[90%] max-w-5xl overflow-visible",
 
   // Container
   navContent: "flex items-center w-full px-2 justify-between",
@@ -721,17 +712,17 @@ export const navbarStyles = {
   // Brand/Logo
   brandContainer: "flex items-center",
   logoContainer:
-    "flex items-center justify-center rounded-full bg-gray-100 p-2 mr-3 transition-all duration-300 group-hover:shadow-lg group-hover:scale-105",
-  logoIcon: "h-6 w-6 text-gray-800 transition-colors duration-300 group-hover:text-white",
-  logoLink: "flex items-baseline gap-2 select-none group cursor-pointer",
-  logoText: "text-lg sm:text-2xl md:text-2xl font-light tracking-wide transition-all duration-300 ease-out group-hover:scale-110 group-hover:text-white",
+    "flex items-center justify-center rounded-full bg-gray-100 p-2 mr-3",
+  logoIcon: "h-6 w-6 text-gray-800",
+  logoLink: "flex items-baseline gap-2 select-none",
+  logoText: "text-lg sm:text-2xl md:text-2xl font-light tracking-wide",
 
   // Desktop Navigation
   desktopNav: "hidden md:flex items-center gap-6 mx-auto",
   navItemBase:
     "relative flex items-center gap-1 px-6 py-2 text-sm transition-colors duration-200",
   navItemActive: "text-gray-900 font-semibold",
-  navItemInactive: "text-gray-700 hover:text-gray-900 group-hover:text-white",
+  navItemInactive: "text-gray-700 hover:text-gray-900",
   activeIndicator:
     "absolute left-1/2 -bottom-1 w-8 -translate-x-1/2 h-0.5 rounded-full transition-opacity duration-200 transform",
   activeIndicatorVisible:
@@ -739,9 +730,9 @@ export const navbarStyles = {
   activeIndicatorHidden: "opacity-0",
 
   // Right Actions
-  rightActions: "flex items-center gap-6",
+  rightActions: "flex items-center gap-4 md:gap-6",
   cartLink:
-    "inline-flex text-gray-500 hover:text-gray-700 transition-colors relative group-hover:text-white",
+    "inline-flex text-gray-500 hover:text-gray-700 transition-colors relative",
   cartIcon: "h-5 w-5",
   cartBadge:
     "absolute top-0 right-0 -translate-x-1/2 sm:-top-4 sm:-right-4 sm:translate-x-0 inline-flex items-center justify-center px-1.5 py-1 text-xs rounded-full bg-gray-500 text-white font-medium",
@@ -753,17 +744,18 @@ export const navbarStyles = {
 
   // Account Links
   accountLink:
-    "hidden md:flex items-center cursor-pointer text-gray-500 hover:text-gray-700 transition-colors group-hover:text-white",
+    "hidden md:flex items-center cursor-pointer text-gray-500 hover:text-gray-700 transition-colors",
   accountIcon: "h-5 w-5 mr-1",
   accountText: "text-sm",
 
   // Mobile Menu
   mobileMenuButton: "md:hidden ml-2",
-  menuButton: "text-gray-500 hover:text-gray-700 p-2 rounded-full group-hover:text-white",
+  menuButton: "text-gray-500 hover:text-gray-700 p-2 rounded-full",
   menuIcon: "h-6 w-6",
 
   // Mobile Menu Content
-  mobileNav: "md:hidden mt-4 pb-4 border-t border-gray-200 pt-4 bg-white rounded-b-lg shadow-sm",
+  mobileMenu:
+    "md:hidden mt-4 pb-4 border-t border-gray-200 pt-4 bg-white rounded-b-lg shadow-sm",
   mobileMenuContainer: "flex flex-col space-y-2",
   mobileNavItemBase:
     "flex items-center justify-center px-4 py-3 text-sm rounded-lg transition-colors w-full",
@@ -771,12 +763,12 @@ export const navbarStyles = {
   mobileNavItemInactive: "text-gray-700 hover:bg-gray-50",
   mobileNavItemText: "font-medium",
 
-  // Mobile Account Section (hide on mobile)
+  // Mobile Account Section (show on mobile)
   mobileAccountContainer: "px-4 pt-2",
   mobileAccountLink:
-    "hidden md:flex xl:items-center justify-center lg:items-center md:items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-50",
+    "flex md:hidden xl:items-center justify-center lg:items-center md:items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-50",
   mobileAccountButton:
-    "hidden md:w-full flex xl:items-center justify-center lg:items-center md:items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-50",
+    "flex md:hidden xl:items-center justify-center lg:items-center md:items-center gap-2 px-3 py-2 rounded-md text-sm text-gray-700 hover:bg-gray-50",
   mobileAccountIcon: "h-4 w-4",
 
   // Inline styles

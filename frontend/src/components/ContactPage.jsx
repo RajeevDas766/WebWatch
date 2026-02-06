@@ -248,8 +248,11 @@ const ContactPage = () => {
             className={contactPageStyles.pageTitle}
             style={{ fontFamily: "'Dancing Script', cursive" }}
           >
-            Get in touch
-          </h1>
+            Get in touch 
+            <span className="text-xl" style={{ filter: 'brightness(9) saturate(100%) invert(5%) sepia(5%) hue-rotate(0deg) brightness(10%) contrast(100%)' }}> ‪‪❤︎‬</span>
+            <br />
+          </h1> 
+
           <p
             style={{
               fontFamily: "'Playfair Display', serif",

@@ -5,6 +5,8 @@ import { toast, ToastContainer } from "react-toastify";
 import { ArrowLeft, Eye, EyeOff, Lock, Mail, User } from "lucide-react";
 import axios from "axios";
 
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:4000";
+
 const SignUpPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -13,10 +15,6 @@ const SignUpPage = () => {
   const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
   const [submitting, setSubmitting] = useState(false);
-
-  const API_BASE = "http://localhost:4000";
-
-  //   to submit
   const handleSubmit = async (e) => {
     e.preventDefault();
 

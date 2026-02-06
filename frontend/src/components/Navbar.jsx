@@ -103,7 +103,7 @@ const Navbar = () => {
                 style={navbarStyles.logoTextStyle}
                 className={navbarStyles.logoText}
               >
-               WebWatch
+                WebWatch
               </span>
             </Link>
           </div>
